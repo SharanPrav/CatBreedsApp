@@ -29,6 +29,7 @@ class BreedsViewModel: ObservableObject {
     
     private func fetchAndDisplayCatBreeds() {
         guard let url = URL(string: "https://api.thecatapi.com/v1/breeds/?limit=15") else {
+            errorMessage = APIError.invalidURL.localizedDescription
             return
         }
         

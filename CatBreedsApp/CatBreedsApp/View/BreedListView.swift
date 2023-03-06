@@ -28,6 +28,7 @@ struct BreedListView: View {
                 .refreshable {
                     viewModel.displayCatBreeds()
                 }
+            
                 .listStyle(.plain)
                 .navigationTitle("Cat Breeds")
             }

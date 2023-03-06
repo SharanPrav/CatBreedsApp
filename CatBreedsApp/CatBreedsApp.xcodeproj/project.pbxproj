@@ -19,6 +19,8 @@
 		05B7641C29B609F400097170 /* RowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7641B29B609F400097170 /* RowVIew.swift */; };
 		05B7641E29B60AA200097170 /* BreedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7641D29B60AA200097170 /* BreedListView.swift */; };
 		05B7642029B60B0000097170 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7641F29B60B0000097170 /* ErrorView.swift */; };
+		05B7642229B6110E00097170 /* BreedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7642129B6110E00097170 /* BreedTests.swift */; };
+		05B7642429B6116200097170 /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7642329B6116200097170 /* APIErrorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		05B763E229B5FA0100097170 /* CatBreedsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CatBreedsApp.entitlements; sourceTree = "<group>"; };
 		05B763E429B5FA0100097170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05B763EA29B5FA0100097170 /* CatBreedsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatBreedsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		05B763F829B5FA0100097170 /* CatBreedsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsAppUITests.swift; sourceTree = "<group>"; };
-		05B763FA29B5FA0100097170 /* CatBreedsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		05B7640729B5FAB700097170 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		05B7640A29B5FBBA00097170 /* CatSetvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSetvice.swift; sourceTree = "<group>"; };
 		05B7640C29B5FC0400097170 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
@@ -49,6 +49,9 @@
 		05B7641B29B609F400097170 /* RowVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowVIew.swift; sourceTree = "<group>"; };
 		05B7641D29B60AA200097170 /* BreedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListView.swift; sourceTree = "<group>"; };
 		05B7641F29B60B0000097170 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		05B7642129B6110E00097170 /* BreedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedTests.swift; sourceTree = "<group>"; };
+		05B7642329B6116200097170 /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
+		05B7642529B6157200097170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +77,6 @@
 			children = (
 				05B763DB29B5FA0000097170 /* CatBreedsApp */,
 				05B763ED29B5FA0100097170 /* CatBreedsAppTests */,
-				05B763F729B5FA0100097170 /* CatBreedsAppUITests */,
 				05B763DA29B5FA0000097170 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +93,7 @@
 		05B763DB29B5FA0000097170 /* CatBreedsApp */ = {
 			isa = PBXGroup;
 			children = (
+				05B7642529B6157200097170 /* Info.plist */,
 				05B763DC29B5FA0000097170 /* CatBreedsAppApp.swift */,
 				05B7641A29B609CB00097170 /* View */,
 				05B7640E29B6000B00097170 /* ViewModel */,
@@ -114,17 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				05B7641129B6013500097170 /* BreedViewModelTests.swift */,
+				05B7642129B6110E00097170 /* BreedTests.swift */,
+				05B7642329B6116200097170 /* APIErrorTests.swift */,
 			);
 			path = CatBreedsAppTests;
-			sourceTree = "<group>";
-		};
-		05B763F729B5FA0100097170 /* CatBreedsAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				05B763F829B5FA0100097170 /* CatBreedsAppUITests.swift */,
-				05B763FA29B5FA0100097170 /* CatBreedsAppUITestsLaunchTests.swift */,
-			);
-			path = CatBreedsAppUITests;
 			sourceTree = "<group>";
 		};
 		05B7640929B5FB9000097170 /* Model */ = {
@@ -272,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B7642429B6116200097170 /* APIErrorTests.swift in Sources */,
+				05B7642229B6110E00097170 /* BreedTests.swift in Sources */,
 				05B7641229B6013500097170 /* BreedViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +405,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CatBreedsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatBreedsApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -443,6 +442,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CatBreedsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatBreedsApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

@@ -15,14 +15,22 @@ protocol APIServicce {
 
 struct CatServcie: APIServicce {
     func getCatBreeds(url: URL) -> AnyPublisher<[Breed], APIError> {
+        
         var request = URLRequest(url: url)
         request.addValue(apiValue, forHTTPHeaderField: apiKey)
         request.httpMethod = "GET"
 
         return URLSession.shared.dataTaskPublisher(for: request)
-                                .map(\.data)
-                                .decode(type: [Breed].self, decoder: JSONDecoder())
-                                .mapError({ error in APIError.convert(error:error) })
-                                .eraseToAnyPublisher()
+            .tryMap({ (data, response) -> Data in
+                if let response = response as? HTTPURLResponse,
+                   !(200...299).contains(response.statusCode) {
+                    throw APIError.invalidResponse(statusCode: response.statusCode)
+                } else {
+                    return data
+                }
+            })
+            .decode(type: [Breed].self, decoder: JSONDecoder())
+            .mapError({ error in APIError.convert(error:error) })
+            .eraseToAnyPublisher()
     }
 }
