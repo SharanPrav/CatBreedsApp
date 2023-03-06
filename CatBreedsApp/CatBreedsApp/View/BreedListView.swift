@@ -22,13 +22,8 @@ struct BreedListView: View {
                     ForEach(viewModel.breeds) { breed in
                         RowView(breed: breed)
                     }
-                    .listRowSeparator(.hidden)
                     .listRowInsets(.init(top: 10, leading: 10, bottom: 0, trailing: 10))
                 }
-                .refreshable {
-                    viewModel.displayCatBreeds()
-                }
-            
                 .listStyle(.plain)
                 .navigationTitle("Cat Breeds")
             }

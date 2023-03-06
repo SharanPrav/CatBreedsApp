@@ -126,10 +126,8 @@
 		05B7640929B5FB9000097170 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				05B7642629B6219300097170 /* Network */,
 				05B7640729B5FAB700097170 /* Breed.swift */,
-				05B7640A29B5FBBA00097170 /* CatSetvice.swift */,
-				05B7640C29B5FC0400097170 /* ApiKey.swift */,
-				05B7641329B6020200097170 /* APIError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +148,16 @@
 				05B7641F29B60B0000097170 /* ErrorView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		05B7642629B6219300097170 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				05B7640A29B5FBBA00097170 /* CatSetvice.swift */,
+				05B7640C29B5FC0400097170 /* ApiKey.swift */,
+				05B7641329B6020200097170 /* APIError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

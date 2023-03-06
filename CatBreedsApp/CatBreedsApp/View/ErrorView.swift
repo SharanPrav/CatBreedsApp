@@ -19,7 +19,6 @@ struct ErrorView: View {
             Button("Retry") {
                 viewModel.displayCatBreeds()
             }.buttonStyle(.borderedProminent)
-            
         }
     }
 }

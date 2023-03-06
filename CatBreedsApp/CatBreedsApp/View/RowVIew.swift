@@ -23,6 +23,7 @@ struct RowView: View {
                 } else if phase.error != nil {
                     Color.gray
                         .frame(width: imageSize, height: imageSize)
+                        .overlay(Text("No Image").font(.caption), alignment: .center)
                 } else {
                     ProgressView()
                         .frame(width: imageSize, height: imageSize)
