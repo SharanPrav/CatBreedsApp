@@ -14,6 +14,11 @@ protocol APIServicce {
 }
 
 struct CatServcie: APIServicce {
+    
+    /* If I had time I wanted to implement this with Generic type
+    func fetchData<T: Decodable>(_ type: T.Type, url: URL) -> AnyPublisher<T, APIError> { }
+    } */
+    
     func getCatBreeds(url: URL) -> AnyPublisher<[Breed], APIError> {
         
         var request = URLRequest(url: url)
