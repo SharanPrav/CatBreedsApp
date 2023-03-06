@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05B763DD29B5FA0000097170 /* CatBreedsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B763DC29B5FA0000097170 /* CatBreedsAppApp.swift */; };
-		05B763DF29B5FA0000097170 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B763DE29B5FA0000097170 /* ContentView.swift */; };
 		05B763E129B5FA0100097170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B763E029B5FA0100097170 /* Assets.xcassets */; };
 		05B763E529B5FA0100097170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B763E429B5FA0100097170 /* Preview Assets.xcassets */; };
 		05B7640829B5FAB700097170 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7640729B5FAB700097170 /* Breed.swift */; };
@@ -17,6 +16,9 @@
 		05B7641029B6002A00097170 /* BreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7640F29B6002A00097170 /* BreedsViewModel.swift */; };
 		05B7641229B6013500097170 /* BreedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7641129B6013500097170 /* BreedViewModelTests.swift */; };
 		05B7641429B6020200097170 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7641329B6020200097170 /* APIError.swift */; };
+		05B7641C29B609F400097170 /* RowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7641B29B609F400097170 /* RowVIew.swift */; };
+		05B7641E29B60AA200097170 /* BreedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7641D29B60AA200097170 /* BreedListView.swift */; };
+		05B7642029B60B0000097170 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7641F29B60B0000097170 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,6 @@
 /* Begin PBXFileReference section */
 		05B763D929B5FA0000097170 /* CatBreedsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatBreedsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B763DC29B5FA0000097170 /* CatBreedsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsAppApp.swift; sourceTree = "<group>"; };
-		05B763DE29B5FA0000097170 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05B763E029B5FA0100097170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05B763E229B5FA0100097170 /* CatBreedsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CatBreedsApp.entitlements; sourceTree = "<group>"; };
 		05B763E429B5FA0100097170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +46,9 @@
 		05B7640F29B6002A00097170 /* BreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewModel.swift; sourceTree = "<group>"; };
 		05B7641129B6013500097170 /* BreedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModelTests.swift; sourceTree = "<group>"; };
 		05B7641329B6020200097170 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		05B7641B29B609F400097170 /* RowVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowVIew.swift; sourceTree = "<group>"; };
+		05B7641D29B60AA200097170 /* BreedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListView.swift; sourceTree = "<group>"; };
+		05B7641F29B60B0000097170 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				05B763DC29B5FA0000097170 /* CatBreedsAppApp.swift */,
+				05B7641A29B609CB00097170 /* View */,
 				05B7640E29B6000B00097170 /* ViewModel */,
 				05B7640929B5FB9000097170 /* Model */,
-				05B763DE29B5FA0000097170 /* ContentView.swift */,
 				05B763E029B5FA0100097170 /* Assets.xcassets */,
 				05B763E229B5FA0100097170 /* CatBreedsApp.entitlements */,
 				05B763E329B5FA0100097170 /* Preview Content */,
@@ -140,6 +144,16 @@
 				05B7640F29B6002A00097170 /* BreedsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		05B7641A29B609CB00097170 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05B7641B29B609F400097170 /* RowVIew.swift */,
+				05B7641D29B60AA200097170 /* BreedListView.swift */,
+				05B7641F29B60B0000097170 /* ErrorView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +258,10 @@
 			files = (
 				05B7640D29B5FC0400097170 /* ApiKey.swift in Sources */,
 				05B7640829B5FAB700097170 /* Breed.swift in Sources */,
-				05B763DF29B5FA0000097170 /* ContentView.swift in Sources */,
+				05B7641C29B609F400097170 /* RowVIew.swift in Sources */,
 				05B7640B29B5FBBA00097170 /* CatSetvice.swift in Sources */,
+				05B7642029B60B0000097170 /* ErrorView.swift in Sources */,
+				05B7641E29B60AA200097170 /* BreedListView.swift in Sources */,
 				05B763DD29B5FA0000097170 /* CatBreedsAppApp.swift in Sources */,
 				05B7641029B6002A00097170 /* BreedsViewModel.swift in Sources */,
 				05B7641429B6020200097170 /* APIError.swift in Sources */,
